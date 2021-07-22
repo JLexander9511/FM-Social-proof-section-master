@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Spartan', sans-serif;
+}
+
+body{
+    position: relative;
+    margin: 0px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 80px 25px 100px 25px;
+}
+
+.bg-n1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bg-n3{
+    display: none;
+}
+
+.container{
+    position: relative;
+    margin: 0px;
+}
+
+.statistic{
+    position: relative;
+    margin: 0px;
+}
+
+.statistic h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 28px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 25px;
+}
+
+.statistic p{
+    color:hsl(303, 10%, 53%);
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 47px;
+}
+
+.rating{
+    text-align: center;
+}
+
+.rate{
+    background-color: hsl(300, 24%, 96%);
+    color:hsl(300, 43%, 22%);
+    font-weight: bold;
+    width: 325px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 16px;
+}
+
+.rate figure img{
+    margin-top: 16px;
+}
+
+.rate:last-child{
+    margin-bottom: 50px;
+}
+
+.testimony{
+    position: relative;
+    margin: 0px;
+}
+
+#reference{
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    margin: 0px;
+    padding: 41px 33px 40px 33px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+#reference figure{
+    margin: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+#reference img{
+    border-radius: 50%;
+    margin: 0px;
+    width: 41px;
+    height: 41px;
+}
+
+#name-position{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#reference h2{
+    margin: 0px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#reference h3{
+    color: hsl(333, 48%, 61%);
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#reference p{
+    margin: 0px;
+    font-size: 15px;
+    width: 100%;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bg-n2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.bg-n4{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        position: relative;
+        margin: 0px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 130px 165px;
+    }
+
+    .bg-n1{
+        display: none;
+    }
+
+    .bg-n3{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .container{
+        position: relative;
+        margin: 0px;
+        display: grid;
+        grid-template-areas: 'statistic rating'
+                             'testimony testimony';
+        grid-gap: 20px;
+    }
+
+    .statistic{
+        position: relative;
+        margin: 0px;
+        grid-area: statistic;
+    }
+
+    .statistic h1{
+        font-size: 50px;
+        text-align: left;
+        margin-bottom: 12.5px;
+        line-height: 50px;
+
+    }
+    
+    .statistic p{
+        margin: 0px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .rating{
+        text-align: center;
+        grid-area: rating;
+        width: 350px;
+    }
+
+    .rate{
+        background-color: hsl(300, 24%, 96%);
+        color:hsl(300, 43%, 22%);
+        font-weight: bold;
+        width: 445px;
+        height: 55px;
+        margin: 0px;
+        border-radius: 10px;
+        padding-bottom: 16px;
+        text-align: left;
+        margin-bottom: 18px;
+    }
+    
+    .rate figure {
+        margin: 0px 32px;
+        display: inline;
+    }
+
+    .rating div:nth-of-type(2){
+        margin-left: 12.5%;
+    }
+    .rating div:nth-of-type(3){
+        margin-left: 25%;
+    }
+
+    .testimony{
+        position: relative;
+        margin: 0px;
+        grid-area: testimony;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 75px;
+        height: 300px;
+    }
+
+    
+
+    .testimony div:nth-of-type(1){
+        align-self: flex-start;
+    }
+
+    .testimony div:nth-of-type(2){
+        align-self: center;
+    }
+    .testimony div:nth-of-type(3){
+        align-self: flex-end;
+    }
+
+    #reference{
+        margin: 0px 15px;
+
+    }
+
+    #reference h2{
+        font-size: 14px;
+    }
+    
+    #reference h3{
+        color: hsl(333, 48%, 61%);
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #reference p{
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .bg-n2{
+        display: none;
+    }
+
+    .bg-n4{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
